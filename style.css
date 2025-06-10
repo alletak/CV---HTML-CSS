@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-text: #333;
+  --bc-color: #f3f4f6;
+  --header-color: #512da8;
+  --section-bc-color: #f9f9fc;
+  --h2-Color: #4a148c;
+  --link-hover: #311b92;
+}
+
+body {
+  line-height: 1.6;
+  font-family: Montserrat, sans-serif;
+  color: var(--color-text);
+  background-color: var(--bc-color);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-text);
+  margin: 20px 0 10px;
+}
+
+section {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: var(--section-bc-color);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  border-bottom: 2px solid rgba(74, 20, 140, 0.2);
+  text-transform: uppercase;
+  color: var(--h2-Color);
+}
+
+.profile-photo {
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 3px solid #9575cd; 
+  max-width: 120px;
+}
+
+.info-list,
+.job-responsibilities,
+.interests-list {
+  list-style-type: none;
+  padding: 0
+}
+
+.info-list li, 
+.job-responsibilities li,
+.interests-list li {
+  margin-bottom: 0;
+}
+
+.info-list a,
+.job-responsibilities a {
+  color: var(--header-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.info-list a:hover,
+.job-responsibilities a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.job-title {
+  color: var(--h2-Color);
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.education-item {
+  margin-bottom: 20px;
+}
+
+.degree {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.interest-list {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+.skills-table,
+.language-table {
+  width:100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.skills-table th,
+.language-table th,
+.skills-table td,
+.language-table td {
+  border: 1px solid;
+  padding: 12px;
+}
+
+.skills-table thead,
+.language-table thead {
+  background-color:#512da8;
+  color: white;
+}
+
+.skills-table tbody tr:nth-child(even),
+.language-table tbody tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.skills-table tbody tr:hover,
+.language-table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
